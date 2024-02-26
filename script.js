@@ -14,7 +14,7 @@ function createPromise(n , delay){
 btn.addEventListener('click' , () =>{
 	let n = ip.value;
 	if(n){
-		createPromise(n,2).then( num => {
+		createPromise(n,2).then( num => { 
 			output.innerText = `Result: ${num}`;
 			return createPromise(num*2 , 1);
 		}).then( num => {
